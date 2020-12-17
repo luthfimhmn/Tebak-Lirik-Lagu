@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotipi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <!-- Navbar -->
+    <header>
+        <div class="container">
+            <img src="./img/icon.png" alt="logo" class="logo">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html"> Home</a></li>
+                    <li><a href="index.html"> About</a></li>
+                    <li><a href="index.html"> Pricing</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <section class="utama">
+        
+
+        <div class="card">
+            <h1>Tebak Lirik Lagu</h1>
+            <img id="questionPic" src="./img/kopdut_question.jpg" alt="lagu"><br>
+            <audio id="questionMusic" controls src="./music/kopdut_question.mp4"
+                type="audio/mp3">
+            </audio> <br>
+            
+            <input type="text" id="Jawaban"><br>
+            <button>Tebak!</button><br>
+            <button id="changeQues" onclick="changeMusic()">Next Song!</button>
+            
+            <h1>ANDA BENAR</h1>
+        </div>
+    </section>
+
+    <footer>
+        Luthfi Muhamin - Helsinki Fox
+    </footer>
+
+    <script src="1.js"></script>
+</body>
+</html>
