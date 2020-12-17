@@ -81,13 +81,13 @@ nav a:hover::before {
 .utama img {
   margin-top: 5px;
   margin-bottom: 10px;
-  width: 30%;
+  width: 50%;
 }
 
 .utama audio {
   margin-top: 5px;
   margin-bottom: 15px;
-  width: 65%;
+  width: 50%;
   height: 20px;
 }
 
@@ -104,13 +104,17 @@ nav a:hover::before {
 }
 
 input {
-  width: 60%;
+  width: 50%;
   height: 30px;
   margin-bottom: 10px;
-  border-radius: 30px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 button {
+  border: 1px black;
+  width: 15%;
+  height: 40px;
   margin-left: 15px;
   margin-bottom: 15px;
   border-radius: 15px;
@@ -124,4 +128,8 @@ footer {
   background-color: #48ecd6;
   color: black;
   text-align: center;
+}
+
+#hasil {
+  display: none;
 }

@@ -1,6 +1,8 @@
 let picture = document.getElementById("questionPic")
 let music = document.getElementById("questionMusic")
 let nextButton = document.getElementById("nextButton")
+let answer = document.getElementById("answer")
+let hasil = document.getElementById("hasil")
 
 
 let arrMusic = [
@@ -15,10 +17,11 @@ let arrPict = [
     "./img/kopdut_answer.jpg"
 ]
 
+let arrMusicQues=[
+
+]
+
 let point = 0
-
-
-// if(tebak === play fullsong)
 
 function changeMusic(){
 
@@ -29,4 +32,14 @@ function changeMusic(){
     music.src = arrMusic[indexRandom]
     picture.src = arrPict[indexRandom]
 
+}
+
+
+function tebak(event) {
+    let response = document.getElementById("answer").value;
+    
+    if(response.toLowerCase() === 'karena tersentuh alunan lagu semerdu kopi dangdut'){
+        console.log('betul sekali luthfi');
+        document.getElementById("answer").value = ""
+    }
 }
