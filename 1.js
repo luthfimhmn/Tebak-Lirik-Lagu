@@ -16,22 +16,22 @@ let arrPictQuestion = [
     "./img/lemontree_question.jpg"
 ]
 
-let arrMusicAnswer=[
-    "./music/kopdut_answer.mp3",
-    "./music/lazy_answer.mp3",
-    "./music/lemontree_answer.mp3"
-]
+// let arrMusicAnswer=[
+//     "./music/kopdut_answer.mp3",
+//     "./music/lazy_answer.mp3",
+//     "./music/lemontree_answer.mp3"
+// ]
 
-let arrPictAnswer=[
-    "./img/kopdut_answer.jpg",
-    "./img/lazy_answer.jpg",
-    "./img/lemontree_answer.jpg"
-]
+// let arrPictAnswer=[
+//     "./img/kopdut_answer.jpg",
+//     "./img/lazy_answer.jpg",
+//     "./img/lemontree_answer.jpg"
+// ]
 
-let hint = ['... kopi dangdut',
-'... all',
-'... tree'
-]
+// let hint = ['... kopi dangdut',
+// '... all',
+// '... tree'
+// ]
 
 let realAnswer = [
     'karena tersentuh alunan lagu semerdu kopi dangdut',
@@ -57,12 +57,14 @@ function bersih(){
 function tebak(event) {
     let response = answer.value;
 
-    // console.log(music.src);
-
-    // if (music.src == 'https://luthfimhmn.github.io/music/lazy_question.mp3' && response.toLowerCase() == realAnswer[1]) {
+    // if (music.src == './music/lazy_question.mp3' && response.toLowerCase() == realAnswer[1]) {
     //     hasil.setAttribute("class","muncul");
-    //         bersih()
-    // }
+    //     bersih()
+    // } 
+    
+    /// Belum dapet src-nya. gak masuk kondisi.
+
+
     if(response.toLowerCase() == realAnswer[0]){
             // masukan class hide jadi available
             hasil.setAttribute("class","muncul");
@@ -82,10 +84,6 @@ function tebak(event) {
     }
 }
 
-
-function start(){
-
-}
 
 
 
