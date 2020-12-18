@@ -63,26 +63,24 @@ function tebak(event) {
     //     hasil.setAttribute("class","muncul");
     //         bersih()
     // }
-
-
-        if(response.toLowerCase() == realAnswer[0]){
+    if(response.toLowerCase() == realAnswer[0]){
             // masukan class hide jadi available
             hasil.setAttribute("class","muncul");
             bersih()
-        }else if(response.toLowerCase() == realAnswer[1]){
+    }else if(response.toLowerCase() == realAnswer[1]){
             // masukan class hide jadi available
             hasil.setAttribute("class","muncul");
             bersih()
-        }else if (response.toLowerCase() == realAnswer[2]){
+    }else if (response.toLowerCase() == realAnswer[2]){
             // masukan class hide jadi available
             hasil.setAttribute("class","muncul");
             bersih()
-        }else{
-            hasil.innerText = "Kamu masih salah!"
-            hasil.setAttribute("class","muncul");
-            bersih()
-        }
+    }else{
+        hasil.innerText = "Kamu masih salah!"
+        hasil.setAttribute("class","muncul");
+        bersih()
     }
+}
 
 
 function start(){
