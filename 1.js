@@ -72,7 +72,7 @@ function tebak(event) {
             music.src = arrMusicAnswer[1]
             picture.src = arrPictAnswer[1]
 
-    }else if (music.src == 'https://luthfimhmn.github.io/music/lemontree_question.mp3' && response.toLowerCase() == realAnswer[2] && arrPictQuestion[2]){
+    }else if (music.src == 'https://luthfimhmn.github.io/music/lemontree_question.mp3' && response.toLowerCase() == realAnswer[2]){
             // masukan class hide jadi available
             hasil.innerText = "Anda Benar!!"
             hasil.setAttribute("class","muncul");
