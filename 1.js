@@ -64,7 +64,6 @@ function tebak(event) {
     
     /// Belum dapet src-nya. gak masuk kondisi.
 
-
     if(response.toLowerCase() == realAnswer[0]){
             // masukan class hide jadi available
             hasil.setAttribute("class","muncul");
