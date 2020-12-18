@@ -57,29 +57,31 @@ function bersih(){
 function tebak(event) {
     let response = answer.value;
 
-    console.log(music.src);
+    // console.log(music.src);
 
-    if (music.src == 'https://luthfimhmn.github.io/music/lazy_question.mp3' && response.toLowerCase() == realAnswer[1]) {
-        hasil.setAttribute("class","muncul");
+    // if (music.src == 'https://luthfimhmn.github.io/music/lazy_question.mp3' && response.toLowerCase() == realAnswer[1]) {
+    //     hasil.setAttribute("class","muncul");
+    //         bersih()
+    // }
+
+
+        if(response.toLowerCase() == realAnswer[0]){
+            // masukan class hide jadi available
+            hasil.setAttribute("class","muncul");
             bersih()
-    }
-        // if(response.toLowerCase() == realAnswer[0]){
-        //     // masukan class hide jadi available
-        //     hasil.setAttribute("class","muncul");
-        //     bersih()
-        // }else if(response.toLowerCase() == realAnswer[1]){
-        //     // masukan class hide jadi available
-        //     hasil.setAttribute("class","muncul");
-        //     bersih()
-        // }else if (response.toLowerCase() == realAnswer[2]){
-        //     // masukan class hide jadi available
-        //     hasil.setAttribute("class","muncul");
-        //     bersih()
-        // }else{
-        //     hasil.innerText = "Kamu masih salah!"
-        //     hasil.setAttribute("class","muncul");
-        //     bersih()
-        // }
+        }else if(response.toLowerCase() == realAnswer[1]){
+            // masukan class hide jadi available
+            hasil.setAttribute("class","muncul");
+            bersih()
+        }else if (response.toLowerCase() == realAnswer[2]){
+            // masukan class hide jadi available
+            hasil.setAttribute("class","muncul");
+            bersih()
+        }else{
+            hasil.innerText = "Kamu masih salah!"
+            hasil.setAttribute("class","muncul");
+            bersih()
+        }
     }
 
 
