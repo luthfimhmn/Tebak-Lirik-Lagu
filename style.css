@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  background: #48ecd6;
+  background: #81b71a;
 }
 
 header::after {
@@ -81,7 +81,7 @@ nav a:hover::before {
 .utama img {
   margin-top: 5px;
   margin-bottom: 10px;
-  width: 50%;
+  width: 40%;
 }
 
 .utama audio {
@@ -130,6 +130,10 @@ footer {
   text-align: center;
 }
 
-#hasil {
+.hilang {
   display: none;
+}
+
+.muncul {
+  display: block;
 }

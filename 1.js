@@ -1,45 +1,93 @@
 let picture = document.getElementById("questionPic")
 let music = document.getElementById("questionMusic")
-let nextButton = document.getElementById("nextButton")
 let answer = document.getElementById("answer")
 let hasil = document.getElementById("hasil")
 
 
-let arrMusic = [
-    "./music/kopdut_question.mp4",
-    "./music/kopdut_answer.mp4",
-    "./music/icanfly.mp3"
+let arrMusicQuestion = [
+    "./music/kopdut_question.mp3",
+    "./music/lazy_question.mp3",
+    "./music/lemontree_question.mp3"
 ]
 
-let arrPict = [
+let arrPictQuestion = [
     "./img/kopdut_question.jpg",
-    "./img/kopdut_answer.jpg",
-    "./img/kopdut_answer.jpg"
+    "./img/lazy_question.jpg",
+    "./img/lemontree_question.jpg"
 ]
 
-let arrMusicQues=[
+let arrMusicAnswer=[
+    "./music/kopdut_answer.mp3",
+    "./music/lazy_answer.mp3",
+    "./music/lemontree_answer.mp3"
+]
 
+let arrPictAnswer=[
+    "./img/kopdut_answer.jpg",
+    "./img/lazy_answer.jpg",
+    "./img/lemontree_answer.jpg"
+]
+
+let hint = ['... kopi dangdut',
+'... all',
+'... tree'
+]
+
+let realAnswer = [
+    'karena tersentuh alunan lagu semerdu kopi dangdut',
+    'nothing at all',
+    'is just a yellow lemon tree'
 ]
 
 let point = 0
 
 function changeMusic(){
-
+    answer.placeholder = 'Tulis Jawabanmu Disini!'
     indexRandom =  Math.round(Math.random() * 2);
+    music.src = arrMusicQuestion[indexRandom]
+    picture.src = arrPictQuestion[indexRandom]
 
-    console.log(indexRandom);
-
-    music.src = arrMusic[indexRandom]
-    picture.src = arrPict[indexRandom]
-
+    hasil.setAttribute("class","hilang");
 }
 
+function bersih(){
+    answer.value = ""
+}
 
 function tebak(event) {
-    let response = document.getElementById("answer").value;
-    
-    if(response.toLowerCase() === 'karena tersentuh alunan lagu semerdu kopi dangdut'){
-        console.log('betul sekali luthfi');
-        document.getElementById("answer").value = ""
+    let response = answer.value;
+
+    console.log(music.src);
+
+    if (music.src == 'http://127.0.0.1:5500/music/kopdut_question.mp3' && response.toLowerCase() == realAnswer[0]) {
+        hasil.setAttribute("class","muncul");
+            bersih()
     }
+        // if(response.toLowerCase() == realAnswer[0]){
+        //     // masukan class hide jadi available
+        //     hasil.setAttribute("class","muncul");
+        //     bersih()
+        // }else if(response.toLowerCase() == realAnswer[1]){
+        //     // masukan class hide jadi available
+        //     hasil.setAttribute("class","muncul");
+        //     bersih()
+        // }else if (response.toLowerCase() == realAnswer[2]){
+        //     // masukan class hide jadi available
+        //     hasil.setAttribute("class","muncul");
+        //     bersih()
+        // }else{
+        //     hasil.innerText = "Kamu masih salah!"
+        //     hasil.setAttribute("class","muncul");
+        //     bersih()
+        // }
+    }
+
+
+function start(){
+
 }
+
+
+
+
+
