@@ -59,7 +59,7 @@ function tebak(event) {
 
     console.log(music.src);
 
-    if (music.src == 'http://127.0.0.1:5500/music/kopdut_question.mp3' && response.toLowerCase() == realAnswer[0]) {
+    if (music.src == 'https://luthfimhmn.github.io/music/kopdut_question.mp3' && response.toLowerCase() == realAnswer[0]) {
         hasil.setAttribute("class","muncul");
             bersih()
     }
